@@ -1,13 +1,43 @@
+:root{
+  --primary: #171926;
+  --secundary: #C016B8;
+  --background: #171926;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Montserrat', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--background);
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Circulos para el Background */
+.Circle1{
+  position: absolute;
+  width: 702px;
+  height: 702px;
+  right: -200px;
+  top: -201px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(20, 15, 83, 0.4) 0%, rgba(20, 15, 83, 0) 100%);
+}
+.Circle2{
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  left: -377px;
+  top: 338px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(20, 15, 83, 0.4) 0%, rgba(20, 15, 83, 0) 100%);
+
+}
+.icons:hover{
+  filter: invert(1);
 }
