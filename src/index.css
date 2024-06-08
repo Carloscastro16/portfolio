@@ -41,3 +41,12 @@ code {
 .icons:hover{
   filter: invert(1);
 }
+
+.projectImg{
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  object-fit: cover;
+  color: #17192672
+}
+

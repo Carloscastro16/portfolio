@@ -26,3 +26,4 @@ const BouncingArrow = ({ src, alt }: any) => {
 };
 
 export default BouncingArrow;
+

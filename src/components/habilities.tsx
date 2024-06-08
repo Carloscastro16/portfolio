@@ -4,6 +4,7 @@ export default function Habilities(){
     return(
         <>
             <Box sx={{
+                height: '150vh'
             }}>
 
             </Box>
