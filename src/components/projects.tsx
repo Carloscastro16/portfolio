@@ -4,7 +4,8 @@ import gaming from '../assets/images/gaming.png'
 import sonora from '../assets/images/sonora.png'
 import comtecsa from '../assets/images/comtecsa.png'
 import styled from "@emotion/styled";
-
+import react from '../assets/icons/react.png'
+import { useState } from "react";
 const float = keyframes`
   0% {
     transform: translateY(0);
@@ -26,16 +27,48 @@ const FloatingGridItem = styled(Grid)`
   background-repeat: no-repeat;
   width: 100%;
 `;
+const LanguageButtonPill = styled(Box)`
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 16px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border: 1px solid white;
+  width: fit-content;
+  gap: 6px;
+  font-size: 14px;
+  color: white;
+`;
+
+
 const Overlay = styled(Box)`
   background: #17192672;
   backdrop-filter: blur(40px);
-  height: 200px;
+  height: fit-content;
   width: 100%;
   border-radius: 16px;
   padding: 24px;
   margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+  gap: 16px;
 `;
 export default function Projects() {
+    const [isHovered, setIsHovered] = useState(false);
+    const [hoveredId, sethoveredId] = useState(0);
+
+    const handleMouseEnter = (id: number) => {
+        sethoveredId(id);
+    };
+
+    const handleMouseLeave = () => {
+        sethoveredId(0);
+    };
     return (
         <Box sx={{
             width: '100%',
@@ -71,7 +104,47 @@ export default function Projects() {
                         paddingInline: '12px',
                         paddingBottom: '12px'
                     }}>
-                        <Overlay></Overlay>
+                        <Overlay 
+                        onMouseEnter={ () => handleMouseEnter(1) }
+                        onMouseLeave={handleMouseLeave}>
+                            <Box sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
+                                width: '100%',
+                            }}>
+                                <Box>
+                                    <Typography sx={{
+                                        fontFamily: 'Montserrat',
+                                        fontSize: '20px',
+                                        fontWeight: '500'
+                                    }}>Mayan View Landing | Rediseño de landing</Typography>
+                                    <Typography sx={{
+                                        fontFamily: 'Roboto',
+                                        fontWeight: '300',
+                                        fontSize: '16px',
+                                        opacity: '0.8'
+                                    }}>Desarrollo para Empresa Dapper Technologies</Typography>
+                                </Box>
+                                <Box>
+                                    <LanguageButtonPill>
+                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
+                                        React
+                                    </LanguageButtonPill>
+                                </Box>
+                            </Box>
+                            {hoveredId === 1 && (
+                                <Typography sx={{
+                                    fontFamily: 'Montserrat',
+                                    fontSize: '16px',
+                                    fontWeight: '400'
+                                }}>
+                                    Rediseño de landing page basado en un Figma proporcionado por la empresa Dapper Technologies
+                                    utilizando Angular como Front-end.
+                                </Typography>
+                            )}
+                        </Overlay>
                     </Box>
                 </FloatingGridItem>
                 <FloatingGridItem item xs={6} sx={{ height: '400px', paddingRight: '12px' }}>
@@ -88,7 +161,48 @@ export default function Projects() {
                         paddingInline: '12px',
                         paddingBottom: '12px'
                     }}>
-                        <Overlay></Overlay>
+                        <Overlay 
+                        onMouseEnter={ () => handleMouseEnter(2) }
+                        onMouseLeave={handleMouseLeave}>
+                            <Box sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
+                                width: '100%',
+                            }}>
+                                <Box>
+                                    <Typography sx={{
+                                        fontFamily: 'Montserrat',
+                                        fontSize: '20px',
+                                        fontWeight: '500'
+                                    }}>Sonora Global Landing | Desarrollo de Blog y Panel</Typography>
+                                    <Typography sx={{
+                                        fontFamily: 'Roboto',
+                                        fontWeight: '300',
+                                        fontSize: '16px',
+                                        opacity: '0.8'
+                                    }}>Desarrollo para Empresa Dapper Technologies</Typography>
+                                </Box>
+                                <Box>
+                                    <LanguageButtonPill>
+                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
+                                        React
+                                    </LanguageButtonPill>
+                                </Box>
+                            </Box>
+                            {hoveredId === 2 && (
+                                <Typography sx={{
+                                    fontFamily: 'Montserrat',
+                                    fontSize: '16px',
+                                    fontWeight: '400'
+                                }}>
+                                    Realice el desarrollo de una sección nueva a la página existente
+                                    creando un panel de administrador para manejar las entradas de blog para la página
+                                    utilizando Angular, NodeJs con Express y MongoDB como base de datos.
+                                </Typography>
+                            )}
+                        </Overlay>
                     </Box>
                 </FloatingGridItem>
                 <FloatingGridItem item xs={6} sx={{ height: '400px', paddingLeft: '12px' }}>
@@ -105,7 +219,47 @@ export default function Projects() {
                         paddingInline: '12px',
                         paddingBottom: '12px'
                     }}>
-                        <Overlay></Overlay>
+                        <Overlay 
+                        onMouseEnter={ () => handleMouseEnter(3) }
+                        onMouseLeave={handleMouseLeave}>
+                            <Box sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
+                                width: '100%',
+                            }}>
+                                <Box>
+                                    <Typography sx={{
+                                        fontFamily: 'Montserrat',
+                                        fontSize: '20px',
+                                        fontWeight: '500'
+                                    }}>Landing web de E-Commerce Gaming</Typography>
+                                    <Typography sx={{
+                                        fontFamily: 'Roboto',
+                                        fontWeight: '300',
+                                        fontSize: '16px',
+                                        opacity: '0.8'
+                                    }}>Proyecto personal</Typography>
+                                </Box>
+                                <Box>
+                                    <LanguageButtonPill>
+                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
+                                        React
+                                    </LanguageButtonPill>
+                                </Box>
+                            </Box>
+                            {hoveredId === 3 && (
+                                <Typography sx={{
+                                    fontFamily: 'Montserrat',
+                                    fontSize: '16px',
+                                    fontWeight: '400'
+                                }}>
+                                    Realicé el diseño y desarrollo de la landing page presentada como parte de un Proyecto
+                                    personal utilizando VueJs y TailwindCSS.
+                                </Typography>
+                            )}
+                        </Overlay>
                     </Box>
                 </FloatingGridItem>
                 <FloatingGridItem item xs={12} sx={{ height: '500px', mt: '24px' }}>
@@ -122,7 +276,46 @@ export default function Projects() {
                         paddingInline: '12px',
                         paddingBottom: '12px'
                     }}>
-                        <Overlay></Overlay>
+                        <Overlay 
+                        onMouseEnter={ () => handleMouseEnter(4) }
+                        onMouseLeave={handleMouseLeave}>
+                            <Box sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
+                                width: '100%',
+                            }}>
+                                <Box>
+                                    <Typography sx={{
+                                        fontFamily: 'Montserrat',
+                                        fontSize: '20px',
+                                        fontWeight: '500'
+                                    }}>Mayan View Landing | Rediseño de landing</Typography>
+                                    <Typography sx={{
+                                        fontFamily: 'Roboto',
+                                        fontWeight: '300',
+                                        fontSize: '16px',
+                                        opacity: '0.8'
+                                    }}>Desarrollo para Empresa Dapper Technologies</Typography>
+                                </Box>
+                                <Box>
+                                    <LanguageButtonPill>
+                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
+                                        React
+                                    </LanguageButtonPill>
+                                </Box>
+                            </Box>
+                            {hoveredId === 4 && (
+                                <Typography sx={{
+                                    fontFamily: 'Montserrat',
+                                    fontSize: '16px',
+                                    fontWeight: '400'
+                                }}>
+                                    Rediseño de landing page basado en un Figma proporcionado por la empresa Dapper Technologies.
+                                </Typography>
+                            )}
+                        </Overlay>
                     </Box>
                 </FloatingGridItem>
             </Grid>
