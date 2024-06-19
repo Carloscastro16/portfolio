@@ -1,9 +1,12 @@
-:root{
+:root {
   --primary: #171926;
   --secundary: #C016B8;
   --background: #171926;
 }
-
+html{
+  width: 100vw;
+  max-width: 100vw;
+}
 body {
   margin: 0;
   font-family: 'Montserrat', 'Helvetica Neue',
@@ -12,14 +15,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--background);
   overflow-x: hidden;
+  width: 100vw;
+  max-width: 100vw;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.bgCircle{
+  z-index: -3;
+}
 /* Circulos para el Background */
-.Circle1{
+.Circle1 {
   position: absolute;
   width: 702px;
   height: 702px;
@@ -28,7 +36,8 @@ code {
 
   background: radial-gradient(50% 50% at 50% 50%, rgba(20, 15, 83, 0.4) 0%, rgba(20, 15, 83, 0) 100%);
 }
-.Circle2{
+
+.Circle2 {
   position: absolute;
   width: 1000px;
   height: 1000px;
@@ -38,15 +47,59 @@ code {
   background: radial-gradient(50% 50% at 50% 50%, rgba(20, 15, 83, 0.4) 0%, rgba(20, 15, 83, 0) 100%);
 
 }
-.icons:hover{
+
+.Circle3 {
+  /* Ellipse 1 */
+
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  left: -747px;
+  top: 915px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(192, 22, 184, 0.3) 0%, rgba(192, 22, 184, 0) 100%);
+}
+.Circle7 {
+  /* Ellipse 1 */
+
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  left: -747px;
+  top: 2289px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(192, 22, 184, 0.3) 0%, rgba(192, 22, 184, 0) 100%);
+}
+
+.Circle5 {
+  /* Ellipse 2 */
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  left: 933px;
+  top: 1515px;
+  background: radial-gradient(50% 50% at 50% 50%, #140F53 0%, rgba(20, 15, 83, 0) 100%);
+}
+
+.Circle6 {
+  /* Ellipse 6 */
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  left: 285px;
+  top: 2789px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(192, 22, 184, 0.3) 0%, rgba(192, 22, 184, 0) 100%);
+}
+
+.icons:hover {
   filter: invert(1);
 }
 
-.projectImg{
+.projectImg {
   position: absolute;
   top: 0;
   z-index: 2;
   object-fit: cover;
   color: #17192672
 }
-

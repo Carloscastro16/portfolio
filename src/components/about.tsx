@@ -1,43 +1,11 @@
 import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from "@mui/material";
-import { useEffect, useRef, useState } from "react";
-import styled from "@emotion/styled";
 import { Stack } from "@mui/system";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
-const TitleContainer = styled(Box)`
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -2;
-`;
+
 
 export default function About() {
-    const [isFixed, setIsFixed] = useState(false);
-    const titleRef = useRef<HTMLDivElement | null>(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const section = document.getElementById("target-section");
-            const title = titleRef.current;
-
-            if (section && title) {
-                const sectionRect = section.getBoundingClientRect();
-                const titleRect = title.getBoundingClientRect();
-                const isTopVisible = sectionRect.top <= 0;
-                const isBottomVisible = sectionRect.bottom >= titleRect.height;
-
-                if (isTopVisible && isBottomVisible) {
-                    setIsFixed(true);
-                } else {
-                    setIsFixed(false);
-                }
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
 
     return (
         <>
@@ -45,60 +13,55 @@ export default function About() {
                 id="target-section"
                 sx={{
                     position: "relative",
-                    height: "64vh",
                     width: "100%",
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    flexDirection: 'column',
                 }}
             >
-                <TitleContainer
-                    ref={titleRef}
+                <Typography
+                    variant="h2"
                     sx={{
-                        position: isFixed ? "fixed" : "absolute",
-                        top: 0,
-                        left: "50%",
-                        transform: "translateX(-50%)",
+                        fontFamily: "Montserrat",
+                        fontStyle: "normal",
+                        fontWeight: "700",
+                        fontSize: { xs: '53px', md: "96px" },
+                        lineHeight: "117px",
+                        letterSpacing: "0.29em",
+                        color: "rgba(255, 255, 255, 0.5)",
+                        whiteSpace: "nowrap"
                     }}
                 >
-                    <Typography
-                        variant="h2"
-                        sx={{
-                            fontFamily: "Montserrat",
-                            fontStyle: "normal",
-                            fontWeight: "700",
-                            fontSize: "96px",
-                            lineHeight: "117px",
-                            letterSpacing: "0.29em",
-                            color: "rgba(255, 255, 255, 0.5)",
-                            whiteSpace: "nowrap"
-                        }}
-                    >
-                        SOBRE MÍ
-                    </Typography>
-                </TitleContainer>
+                    SOBRE MÍ
+                </Typography>
                 <Box sx={{
-                    mt: '250px',
                     width: '100%',
-                    height: '100%',
+                    height: 'fit-content',
                     backgroundColor: '',
                     backdropFilter: 'blur(40px)',
                     px: '100px',
-                    py: '50px',
+                    py: '50px'
                 }}>
-                    <Stack direction={'row'} alignItems={'center'} justifyContent={'center'} gap={'42px'}>
+                    <Stack alignItems={'center'} justifyContent={'center'} gap={'42px'} sx={{
+                        direction: { xs: 'column', md: 'column', lg: 'row' }
+                    }}>
                         <Stack direction={'column'} alignItems={'center'} justifyContent={'center'} gap={'24px'} sx={{
                             width: '70%',
                             height: '100%'
                         }}>
-                            <Typography color={'white'} fontFamily={'Montserrat'} fontSize={'20px'} fontWeight={'400'}>
+                            <Typography color={'white'} fontFamily={'Montserrat'} fontWeight={'400'} sx={{
+                                fontSize: { xs: '16px', md: '20px' }
+                            }}>
                                 Hola, soy Carlos, la resolución de problemas fueron
                                 mi pasión desde muy joven, y cuando descubrí la programación,
                                 fue amor a primera vista. Programo sitios web desde 2021,
                                 y en poco tiempo he dominado tecnologías como Angular,
                                 React, Vue, Node.js y Python.
                             </Typography>
-                            <Typography color={'white'} fontFamily={'Montserrat'} fontSize={'20px'} fontWeight={'400'}>
+                            <Typography color={'white'} fontFamily={'Montserrat'} fontSize={'20px'} fontWeight={'400'} sx={{
+                                fontSize: { xs: '16px', md: '20px' }
+                            }}>
                                 Albert Einstein dijo:
                                 "La creatividad es la inteligencia divirtiéndose".
                                 Para mí, cada línea de código es una oportunidad
@@ -110,7 +73,9 @@ export default function About() {
                                 flexDirection: 'center',
                                 width: '100%',
                             }}>
-                                <Typography color={'white'} fontFamily={'Montserrat'} fontSize={'40px'} fontWeight={'500'}>
+                                <Typography color={'white'} fontFamily={'Montserrat'} fontSize={'40px'} fontWeight={'500'} sx={{
+                                    fontSize: { xs: '26px', md: '40px' }
+                                }}>
                                     Experiencia
                                 </Typography>
                                 <Box sx={{
@@ -130,15 +95,15 @@ export default function About() {
                                         alignItems: 'flex-start',
                                         flexDirection: 'column',
                                         gap: '32px',
-                                        width: '70%'
+                                        width: { xs: '80%', md: '70%' }
                                     }}>
                                         <Stack direction={'column'} sx={{
                                             width: '100%',
-                                            gap:'5px'
+                                            gap: '5px'
                                         }}>
                                             <Typography sx={{
                                                 fontFamily: 'Montserrat',
-                                                fontSize: '20px',
+                                                fontSize: { xs: '16px', md: '20px' },
                                                 fontWeight: '500',
                                                 lineHeight: '24p',
                                                 color: 'white'
@@ -146,14 +111,14 @@ export default function About() {
                                             <Stack direction={'row'} gap={'16px'}>
                                                 <Typography sx={{
                                                     fontFamily: 'Montserrat',
-                                                    fontSize: '16px',
+                                                    fontSize: { xs: '12px', md: '16px' },
                                                     color: 'rgba(255, 255, 255, 0.6)',
                                                     lineHeight: '20px',
                                                     fontWeight: '400'
                                                 }}>Dapper technologies</Typography>
                                                 <Typography sx={{
                                                     fontFamily: 'Montserrat',
-                                                    fontSize: '16px',
+                                                    fontSize: { xs: '12px', md: '16px' },
                                                     color: 'rgba(255, 255, 255, 0.6)',
                                                     lineHeight: '20px',
                                                     fontWeight: '400'
@@ -170,7 +135,7 @@ export default function About() {
                                                         </ListItemIcon>
                                                         <ListItemText
                                                             sx={{
-                                                                fontSize: '14px',
+                                                                fontSize: { xs: '10px', md: '14px' },
                                                                 color: 'white'
                                                             }}
                                                             primary="Desarrollo de landing pages y paneles web para importantes empresas de la zona con Angular."
@@ -185,7 +150,7 @@ export default function About() {
                                                         </ListItemIcon>
                                                         <ListItemText
                                                             sx={{
-                                                                fontSize: '14px',
+                                                                fontSize: { xs: '10px', md: '14px' },
                                                                 color: 'white'
                                                             }}
                                                             primary="Desarrollo de API’s en base a buenas practicas con al menos 10 endpoints para conexión de aplicaciones web de Angular."
@@ -196,7 +161,7 @@ export default function About() {
                                         </Stack>
                                         <Stack direction={'column'} sx={{
                                             width: '100%',
-                                            gap:'5px'
+                                            gap: '5px'
                                         }}>
                                             <Typography sx={{
                                                 fontFamily: 'Montserrat',

@@ -15,7 +15,7 @@ export default function Banner(){
         <>
             <Box sx={{
                 width: '100%',
-                height: '80vh',
+                height: {xs: '60vh', md: '40vh',lg:'80vh'},
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -23,14 +23,16 @@ export default function Banner(){
             }}>
                 <Typography sx={{
                     fontFamily: 'Montserrat',
-                    fontSize: '40px',
+                    fontSize: {xs:'20px',md: '32px', lg:'40px'},
+                    textAlign: 'center',
                     fontWeight: '400',
                     lineHeight: '61px'
                 }}><GradientText>Full Stack Junior Engineer</GradientText></Typography>
                 <Typography color={'white'} sx={{
                     fontFamily: 'Montserrat',
-                    fontSize: '128px',
-                    lineHeight: '156px',
+                    fontSize: {xs:'32px', md: '96px', lg:'128px'},
+                    textAlign: 'center',
+                    lineHeight: {xs:'42px', md: '100px',lg:'156px'},
                     fontWeight: '700',
                 }}>Carlos A. Castro</Typography>
                 <Stack direction={'row'} gap={'10px'} alignItems={'center'} justifyContent={'center'} p={'30px'} height={'50px'}>

@@ -1,4 +1,4 @@
-import { Box, Grid, keyframes, Stack, Typography } from "@mui/material";
+import { Box, Grid, keyframes, Typography } from "@mui/material";
 import mayanview from '../assets/images/mayanview.png'
 import gaming from '../assets/images/gaming.png'
 import sonora from '../assets/images/sonora.png'
@@ -59,7 +59,6 @@ const Overlay = styled(Box)`
   gap: 16px;
 `;
 export default function Projects() {
-    const [isHovered, setIsHovered] = useState(false);
     const [hoveredId, sethoveredId] = useState(0);
 
     const handleMouseEnter = (id: number) => {
@@ -79,7 +78,7 @@ export default function Projects() {
                     fontFamily: "Montserrat",
                     fontStyle: "normal",
                     fontWeight: "700",
-                    fontSize: "96px",
+                    fontSize: {xs: '53px',md:"96px"},
                     lineHeight: "117px",
                     letterSpacing: "0.29em",
                     color: "rgba(255, 255, 255, 0.5)",
