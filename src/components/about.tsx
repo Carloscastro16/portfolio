@@ -38,8 +38,8 @@ export default function About() {
                 <Box sx={{
                     width: '100%',
                     height: 'fit-content',
-                    backgroundColor: '',
-                    backdropFilter: 'blur(40px)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.12)',
+                    backdropFilter: 'blur(20px)',
                     px: '100px',
                     py: '50px'
                 }}>

@@ -52,8 +52,8 @@ export default function Habilities() {
                     <Grid item xs={4}>
                         <Box sx={{
                             height: 'fit-content',
-                            background: 'rgba(94, 94, 94, 0.29)',
-                            backdropFilter: 'blur(40px)',
+                            background: 'rgba(0, 0, 0, 0.12)',
+                            backdropFilter: 'blur(20px)',
                             color: 'white',
                             padding: '24px',
                             borderRadius: '16px'
@@ -78,8 +78,8 @@ export default function Habilities() {
                     <Grid item xs={4}>
                         <Box sx={{
                             height: 'fit-content',
-                            background: 'rgba(94, 94, 94, 0.29)',
-                            backdropFilter: 'blur(40px)',
+                            background: 'rgba(0, 0, 0, 0.15)',
+                            backdropFilter: 'blur(20px)',
                             color: 'white',
                             padding: '24px',
                             borderRadius: '16px'
@@ -101,8 +101,8 @@ export default function Habilities() {
                     <Grid item xs={4}>
                         <Box sx={{
                             height: 'fit-content',
-                            background: 'rgba(94, 94, 94, 0.29)',
-                            backdropFilter: 'blur(40px)',
+                            background: 'rgba(0, 0, 0, 0.15)',
+                            backdropFilter: 'blur(20px)',
                             color: 'white',
                             padding: '24px',
                             borderRadius: '16px'

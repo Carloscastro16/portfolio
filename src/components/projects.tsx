@@ -5,6 +5,11 @@ import sonora from '../assets/images/sonora.png'
 import comtecsa from '../assets/images/comtecsa.png'
 import styled from "@emotion/styled";
 import react from '../assets/icons/react.png'
+import Angular from '../assets/icons/angular-svgrepo.png'
+import css from '../assets/icons/css3-02.png'
+import sass from '../assets/icons/sass-svgrepo.png'
+import node from '../assets/icons/node.png'
+import Vue from '../assets/icons/vue-16.png'
 import { useState } from "react";
 const float = keyframes`
   0% {
@@ -128,8 +133,12 @@ export default function Projects() {
                                 </Box>
                                 <Box>
                                     <LanguageButtonPill>
-                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
-                                        React
+                                        <img src={Angular} alt="language" width={'16px'} height={'16px'} />
+                                        Angular
+                                    </LanguageButtonPill>
+                                    <LanguageButtonPill>
+                                        <img src={sass} alt="language" width={'16px'} height={'16px'} />
+                                        Sass
                                     </LanguageButtonPill>
                                 </Box>
                             </Box>
@@ -185,8 +194,16 @@ export default function Projects() {
                                 </Box>
                                 <Box>
                                     <LanguageButtonPill>
-                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
-                                        React
+                                        <img src={Angular} alt="language" width={'16px'} height={'16px'} />
+                                        Angular
+                                    </LanguageButtonPill>
+                                    <LanguageButtonPill>
+                                        <img src={sass} alt="language" width={'16px'} height={'16px'} />
+                                        Sass
+                                    </LanguageButtonPill>
+                                    <LanguageButtonPill>
+                                        <img src={node} alt="language" width={'16px'} height={'16px'} />
+                                        Node
                                     </LanguageButtonPill>
                                 </Box>
                             </Box>
@@ -196,8 +213,8 @@ export default function Projects() {
                                     fontSize: '16px',
                                     fontWeight: '400'
                                 }}>
-                                    Realice el desarrollo de una sección nueva a la página existente
-                                    creando un panel de administrador para manejar las entradas de blog para la página
+                                    Desarrollé una sección de blog para la pagina existente,
+                                    creando un panel de administrador para manejar las entradas,
                                     utilizando Angular, NodeJs con Express y MongoDB como base de datos.
                                 </Typography>
                             )}
@@ -241,10 +258,14 @@ export default function Projects() {
                                         opacity: '0.8'
                                     }}>Proyecto personal</Typography>
                                 </Box>
-                                <Box>
+                                <Box display={'flex'} flexDirection={'column'} gap={'5px'}>
                                     <LanguageButtonPill>
-                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
-                                        React
+                                        <img src={Vue} alt="language" width={'16px'} height={'16px'} />
+                                        Vue
+                                    </LanguageButtonPill>
+                                    <LanguageButtonPill>
+                                        <img src={css} alt="language" width={'16px'} height={'16px'} />
+                                        CSS
                                     </LanguageButtonPill>
                                 </Box>
                             </Box>
@@ -290,15 +311,15 @@ export default function Projects() {
                                         fontFamily: 'Montserrat',
                                         fontSize: '20px',
                                         fontWeight: '500'
-                                    }}>Mayan View Landing | Rediseño de landing</Typography>
+                                    }}>SOFIA Gestion de Redes</Typography>
                                     <Typography sx={{
                                         fontFamily: 'Roboto',
                                         fontWeight: '300',
                                         fontSize: '16px',
                                         opacity: '0.8'
-                                    }}>Desarrollo para Empresa Dapper Technologies</Typography>
+                                    }}>Desarrollo para Empresa Comtecsa S.A. de C.V.</Typography>
                                 </Box>
-                                <Box>
+                                <Box display={'flex'} flexDirection={'column'} gap={'5px'}>
                                     <LanguageButtonPill>
                                         <img src={react} alt="language" width={'16px'} height={'16px'} />
                                         React
@@ -311,7 +332,9 @@ export default function Projects() {
                                     fontSize: '16px',
                                     fontWeight: '400'
                                 }}>
-                                    Rediseño de landing page basado en un Figma proporcionado por la empresa Dapper Technologies.
+                                    Desarrollé un 90% del Front-end y Back-end de la aplicacion web SOFIA,
+                                    agregando funciones de red como, escaneos de red con distintos protocolos de red,
+                                    
                                 </Typography>
                             )}
                         </Overlay>
