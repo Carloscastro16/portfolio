@@ -334,7 +334,6 @@ export default function Projects() {
                                 }}>
                                     Desarrollé un 90% del Front-end y Back-end de la aplicacion web SOFIA,
                                     agregando funciones de red como, escaneos de red con distintos protocolos de red,
-                                    
                                 </Typography>
                             )}
                         </Overlay>
