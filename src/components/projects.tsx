@@ -83,7 +83,7 @@ export default function Projects() {
                     fontFamily: "Montserrat",
                     fontStyle: "normal",
                     fontWeight: "700",
-                    fontSize: {xs: '53px',md:"96px"},
+                    fontSize: { xs: '24px', md: '53px', lg: "96px" },
                     lineHeight: "117px",
                     letterSpacing: "0.29em",
                     color: "rgba(255, 255, 255, 0.5)",
@@ -131,7 +131,7 @@ export default function Projects() {
                                         opacity: '0.8'
                                     }}>Desarrollo para Empresa Dapper Technologies</Typography>
                                 </Box>
-                                <Box>
+                                <Box display={'flex'} flexDirection={'column'} gap={'5px'} alignItems={'flex-end'}>
                                     <LanguageButtonPill>
                                         <img src={Angular} alt="language" width={'16px'} height={'16px'} />
                                         Angular
@@ -192,7 +192,7 @@ export default function Projects() {
                                         opacity: '0.8'
                                     }}>Desarrollo para Empresa Dapper Technologies</Typography>
                                 </Box>
-                                <Box>
+                                <Box display={'flex'} flexDirection={'column'} gap={'5px'} alignItems={'flex-end'}>
                                     <LanguageButtonPill>
                                         <img src={Angular} alt="language" width={'16px'} height={'16px'} />
                                         Angular
@@ -258,7 +258,7 @@ export default function Projects() {
                                         opacity: '0.8'
                                     }}>Proyecto personal</Typography>
                                 </Box>
-                                <Box display={'flex'} flexDirection={'column'} gap={'5px'}>
+                                <Box display={'flex'} flexDirection={'column'} gap={'5px'} alignItems={'flex-end'}>
                                     <LanguageButtonPill>
                                         <img src={Vue} alt="language" width={'16px'} height={'16px'} />
                                         Vue
@@ -319,10 +319,14 @@ export default function Projects() {
                                         opacity: '0.8'
                                     }}>Desarrollo para Empresa Comtecsa S.A. de C.V.</Typography>
                                 </Box>
-                                <Box display={'flex'} flexDirection={'column'} gap={'5px'}>
+                                <Box display={'flex'} flexDirection={'column'} gap={'5px'} alignItems={'flex-end'}>
                                     <LanguageButtonPill>
-                                        <img src={react} alt="language" width={'16px'} height={'16px'} />
-                                        React
+                                        <img src={Angular} alt="language" width={'16px'} height={'16px'} />
+                                        Angular
+                                    </LanguageButtonPill>
+                                    <LanguageButtonPill>
+                                        <img src={node} alt="language" width={'16px'} height={'16px'} />
+                                        Node
                                     </LanguageButtonPill>
                                 </Box>
                             </Box>
@@ -333,7 +337,8 @@ export default function Projects() {
                                     fontWeight: '400'
                                 }}>
                                     Desarrollé un 90% del Front-end y Back-end de la aplicacion web SOFIA,
-                                    agregando funciones de red como, escaneos de red con distintos protocolos de red,
+                                    agregando funciones de red como escaneos de red con distintos protocolos de red, 
+                                    avisos de desconexión por correo, comprobación en tiempo real de la conexión de equipos de la red, entre otras funciones más.
                                 </Typography>
                             )}
                         </Overlay>

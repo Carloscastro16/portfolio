@@ -38,7 +38,7 @@ export default function Habilities() {
                             fontFamily: "Montserrat",
                             fontStyle: "normal",
                             fontWeight: "700",
-                            fontSize: {xs:'32px',md: '53px',lg:"96px"},
+                            fontSize: { xs: '24px', md: '53px', lg: "96px" },
                             lineHeight: "117px",
                             letterSpacing: "0.29em",
                             color: "rgba(255, 255, 255, 0.5)",
@@ -55,23 +55,60 @@ export default function Habilities() {
                             background: 'rgba(0, 0, 0, 0.12)',
                             backdropFilter: 'blur(20px)',
                             color: 'white',
-                            padding: '24px',
+                            padding: { xs: '10px', md: '24px' },
                             borderRadius: '16px'
                         }}>
                             <Typography color={'#C016B8'} fontFamily={'Montserrat'} fontWeight={'600'} sx={{
-                                fontSize: {xs: '20px', md: '28px'}
+                                fontSize: { xs: '14px', md: '20px', lg: '28px' }
                             }}>Front-end</Typography>
                             <Stack flexWrap={'wrap'} direction={'row'} alignItems={'center'} gap={'26px'} sx={{
                                 width: '100%',
                                 mt: '15px'
                             }}>
-                                <img src={angular} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={vue} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={javascript} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={typescript} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={react} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={css} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={sass} alt="react" width={'40px'} height={'40px'}/>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={angular} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={vue} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+
+                                    <img src={javascript} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+
+                                    <img src={typescript} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={react} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={css} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={sass} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
                             </Stack>
                         </Box>
                     </Grid>
@@ -81,20 +118,40 @@ export default function Habilities() {
                             background: 'rgba(0, 0, 0, 0.15)',
                             backdropFilter: 'blur(20px)',
                             color: 'white',
-                            padding: '24px',
+                            padding: { xs: '10px', md: '24px' },
                             borderRadius: '16px'
                         }}>
                             <Typography color={'#C016B8'} fontFamily={'Montserrat'} fontWeight={'600'} sx={{
-                                fontSize: {xs: '20px', md: '28px'}
+                                fontSize: { xs: '14px', md: '20px', lg: '28px' }
                             }}>Back-end</Typography>
                             <Stack flexWrap={'wrap'} direction={'row'} alignItems={'center'} gap={'26px'} sx={{
                                 width: '100%',
                                 mt: '15px'
                             }}>
-                                <img src={node} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={net} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={csharp} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={flask} alt="react" width={'40px'} height={'40px'}/>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={node} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={net} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={csharp} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: { xs: '20px', md: '32px', lg: '40px' },
+                                    height: { xs: '20px', md: '32px', lg: '40px' }
+                                }}>
+                                    <img src={flask} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
                             </Stack>
                         </Box>
                     </Grid>
@@ -104,20 +161,40 @@ export default function Habilities() {
                             background: 'rgba(0, 0, 0, 0.15)',
                             backdropFilter: 'blur(20px)',
                             color: 'white',
-                            padding: '24px',
+                            padding: { xs: '10px', md: '24px' },
                             borderRadius: '16px'
                         }}>
                             <Typography color={'#C016B8'} fontFamily={'Montserrat'} fontWeight={'600'} sx={{
-                                fontSize: {md: '20px', lg: '28px'}
-                            }}>Herramientas</Typography>
+                                fontSize: { xs: '14px', md: '20px', lg: '28px' }
+                            }}>Tools</Typography>
                             <Stack flexWrap={'wrap'} direction={'row'} alignItems={'center'} gap={'26px'} sx={{
                                 width: '100%',
                                 mt: '15px'
                             }}>
-                                <img src={github} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={docker} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={figma} alt="react" width={'40px'} height={'40px'}/>
-                                <img src={sass} alt="react" width={'40px'} height={'40px'}/>
+                                <Box sx={{
+                                    width: {xs:'20px', md:'32px',lg: '40px'},
+                                    height: {xs:'20px', md:'32px',lg: '40px'}
+                                }}>
+                                    <img src={github} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: {xs:'20px', md:'32px',lg: '40px'},
+                                    height: {xs:'20px', md:'32px',lg: '40px'}
+                                }}>
+                                    <img src={docker} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: {xs:'20px', md:'32px',lg: '40px'},
+                                    height: {xs:'20px', md:'32px',lg: '40px'}
+                                }}>
+                                    <img src={figma} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
+                                <Box sx={{
+                                    width: {xs:'20px', md:'32px',lg: '40px'},
+                                    height: {xs:'20px', md:'32px',lg: '40px'}
+                                }}>
+                                    <img src={sass} alt="react" width={'100%'} height={'100%'} />
+                                </Box>
                             </Stack>
                         </Box>
                     </Grid>

@@ -26,7 +26,7 @@ export default function About() {
                         fontFamily: "Montserrat",
                         fontStyle: "normal",
                         fontWeight: "700",
-                        fontSize: { xs: '53px', md: "96px" },
+                        fontSize: { xs: '24px', md: '53px', lg: "96px" },
                         lineHeight: "117px",
                         letterSpacing: "0.29em",
                         color: "rgba(255, 255, 255, 0.5)",
